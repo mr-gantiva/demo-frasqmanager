@@ -1,0 +1,66 @@
+ERROR - 2025-03-30 23:47:50 --> mysqli_sql_exception: Can't create table `frasqmanager-2025`.`detalles_venta` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\frasqmanager\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\frasqmanager\app\Database\Migrations\2025-03-30-222423_CreateDetallesVentaTable.php(52): CodeIgniter\Database\Forge->createTable('detalles_venta')
+#5 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateDetallesVentaTable->up()
+#6 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\frasqmanager\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\frasqmanager\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\frasqmanager\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\frasqmanager\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\frasqmanager\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\frasqmanager\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-03-30 23:54:21 --> mysqli_sql_exception: Can't create table `frasqmanager-2025`.`detalles_venta` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\frasqmanager\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\frasqmanager\app\Database\Migrations\2025-03-30-222423_CreateDetallesVentaTable.php(52): CodeIgniter\Database\Forge->createTable('detalles_venta')
+#5 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateDetallesVentaTable->up()
+#6 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\frasqmanager\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\frasqmanager\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\frasqmanager\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\frasqmanager\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\frasqmanager\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\frasqmanager\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-03-30 23:56:44 --> mysqli_sql_exception: Unknown table 'frasqmanager-2025.ventas' in C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php(327): mysqli->query('DROP TABLE `ven...', 0)
+#1 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `ven...')
+#2 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `ven...')
+#3 C:\xampp\htdocs\frasqmanager\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `ven...')
+#4 C:\xampp\htdocs\frasqmanager\app\Database\Migrations\2025-03-30-222358_CreateVentasTable.php(67): CodeIgniter\Database\Forge->dropTable('ventas')
+#5 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateVentasTable->down()
+#6 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(289): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\frasqmanager\system\Commands\Database\MigrateRollback.php(101): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\frasqmanager\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\frasqmanager\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\frasqmanager\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\frasqmanager\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\frasqmanager\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-03-30 23:56:57 --> mysqli_sql_exception: Table 'frasqmanager-2025.ventas' doesn't exist in C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php(327): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 C:\xampp\htdocs\frasqmanager\system\Database\MySQLi\Connection.php(452): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 C:\xampp\htdocs\frasqmanager\system\Database\BaseConnection.php(1644): CodeIgniter\Database\MySQLi\Connection->_fieldData('`ventas`')
+#5 C:\xampp\htdocs\frasqmanager\system\Database\Forge.php(1111): CodeIgniter\Database\BaseConnection->getFieldData('ventas')
+#6 C:\xampp\htdocs\frasqmanager\app\Database\Migrations\2025-03-30-235621_AddForeignKeys.php(12): CodeIgniter\Database\Forge->processIndexes('ventas')
+#7 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(866): App\Database\Migrations\AddForeignKeys->up()
+#8 C:\xampp\htdocs\frasqmanager\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#9 C:\xampp\htdocs\frasqmanager\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#10 C:\xampp\htdocs\frasqmanager\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\frasqmanager\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\frasqmanager\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\frasqmanager\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\frasqmanager\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
